@@ -72,3 +72,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
 }
+
+#loginDiv {
+  margin-left: 10px;
+}

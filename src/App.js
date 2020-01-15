@@ -61,17 +61,6 @@ class App extends React.Component{
     this.setState({message: message});
   }
 
-  // messageSubmit(event){
-  //   event.preventDefault();
-  //   let chatMessage = {
-  //     username: this.state.username,
-  //     content: this.state.message
-  //   }
-  //
-  //   this.socket.emit('message', chatMessage);
-  //   console.log(chatMessage);
-  // }
-
   chatQuit(bool){
     if (bool) {
       this.setState({pageView: false})

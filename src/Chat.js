@@ -103,13 +103,12 @@ class Chat extends React.Component{
   }
 
   render(){
-
     console.log(this.state.chatArray);
     return (
       <div id="chatContainer">
         <div id="chatHead">
         <p>Chat</p>
-        <button onClick={this.quit}>X</button>
+        <button onClick={this.quit}>Logout</button>
         </div>
         <div id="chatBox">{ this.state.chatArray.map((value, index) => {
           return <Emojify><Linkify target="_blank"><li key={ index + value.content }>{ value.username }: { value.content }</li></Linkify></Emojify>
@@ -118,7 +117,7 @@ class Chat extends React.Component{
         <form onSubmit={this.submit}>
           Message:
           <input type="text" value={this.state.chatMessage} onChange={this.change}/>
-          <input type="submit"/>
+          <input type="submit" value="Send"/>
         </form>
       </div>
     )

@@ -38,11 +38,11 @@ class Login extends React.Component{
 
   render(){
     return (
-      <div>
+      <div id="loginDiv">
         <h1>Username: </h1>
         <form onSubmit={this.submit}>
           <input type="text"  value={this.state.user} onChange={this.change}/>
-          <input type="submit" />
+          <input type="submit" value="Login"/>
         </form>
         <label id="nameValid" style={{ display: this.state.valid }}>Username not valid</label>
       </div>
